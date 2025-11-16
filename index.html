@@ -236,13 +236,6 @@
             color: #cbd5e1;
         }
 
-        .highlight-blue {
-            color: #2563eb;
-            font-weight: 600;
-        }
-        .dark .highlight-blue {
-            color: #60a5fa;
-        }
         .highlight-green {
             color: #059669;
             font-weight: 600;
@@ -266,15 +259,6 @@
             color: #cbd5e1;
         }
         
-        .trans-purple {
-            color: #7c3aed;
-            font-weight: 500;
-        }
-        .dark .trans-purple {
-            color: #a78bfa;
-        }
-
-        /* [Update] New classes for themed vocabulary table */
         .highlight-primary {
             color: #db2777; /* primary-600 */
             font-weight: 600;
@@ -288,6 +272,79 @@
         }
         .dark .trans-primary-dark {
             color: #f9a8d4; /* primary-300 */
+        }
+
+        /* [New] CSS for Mobile-Friendly Table */
+        @media (max-width: 767px) { /* This targets mobile screens (below 'md' breakpoint) */
+            
+            /* Hide the desktop table header */
+            #vocab-table thead {
+                display: none;
+            }
+            
+            /* Make table elements stack as blocks */
+            #vocab-table,
+            #vocab-table tbody,
+            #vocab-table tr {
+                display: block;
+                width: 100%;
+            }
+
+            /* Style each row as a 'card' on mobile */
+            #vocab-table tr {
+                border: 1px solid #e2e8f0; /* secondary-200 */
+                border-radius: 0.5rem; /* rounded-lg */
+                margin-bottom: 1rem;
+                overflow: hidden; /* Ensures rounded corners are clean */
+            }
+            .dark #vocab-table tr {
+                border-color: #334155; /* secondary-700 */
+            }
+
+            /* Make each cell a full-width block */
+            #vocab-table td {
+                display: block;
+                width: 100%;
+                text-align: left; /* Align text to the left */
+                padding: 0.75rem 1rem; /* p-3/4 */
+                border-bottom: 1px solid #f1f5f9; /* secondary-100 */
+            }
+            .dark #vocab-table td {
+                border-color: #334155; /* secondary-700 */
+            }
+
+            /* Remove border from the last cell in the card */
+            #vocab-table tr td:last-child {
+                border-bottom: 0;
+            }
+
+            /* Use the 'data-label' to create a mobile label */
+            #vocab-table td::before {
+                content: attr(data-label); /* Get content from the data-label attribute */
+                display: block;
+                font-weight: 600; /* semibold */
+                font-size: 0.75rem; /* text-xs */
+                text-transform: uppercase;
+                color: #64748b; /* secondary-500 */
+                margin-bottom: 0.25rem;
+            }
+            .dark #vocab-table td::before {
+                 color: #94a3b8; /* secondary-400 */
+            }
+
+            /* Style the 'Term' cell as the card header */
+            #vocab-table td[data-label="Term"] {
+                background-color: #f8fafc; /* secondary-50 */
+                font-size: 1.125rem; /* text-lg */
+                padding: 1rem 1.5rem;
+            }
+            .dark #vocab-table td[data-label="Term"] {
+                background-color: #1e293b; /* secondary-800 */
+            }
+            /* Hide the "Term:" label for the header cell */
+            #vocab-table td[data-label="Term"]::before {
+                display: none;
+            }
         }
 
 
@@ -536,7 +593,7 @@
                     <p>Business ethics refers to the principles and standards that guide behavior in the conduct of business. It is not an abstract concept but a practical necessity.</p>
                     
                     <blockquote>
-                        Business ethics refers to a '<span class="highlight-blue">code of conduct</span>' which businessmen are expected to follow while dealing with others... Businesses must balance their desire to <span class="highlight-green">maximize profits</span> against the needs of the <span class="highlight-blue">stakeholders</span>.
+                        Business ethics refers to a '<span class="highlight-primary">code of conduct</span>' which businessmen are expected to follow while dealing with others... Businesses must balance their desire to <span class="highlight-green">maximize profits</span> against the needs of the <span class="highlight-primary">stakeholders</span>.
                     </blockquote>
                     
                     <h4>Nature of Business Ethics (from p. 17)</h4>
@@ -550,32 +607,32 @@
 
                     <h3 class="headline-green">2. The Importance of Business Ethics</h3>
                     <ul>
-                        <li><strong>The "Honey Bee & Flower" Analogy (p. 14-15):</strong> The book uses this to illustrate a mutually beneficial relationship. The businessman (bee) takes profit (honey) from the consumer (flower). In return, the bee helps the flower multiply (pollination). This is a "<span class="highlight-blue">Symbiosis</span>" where both grow, provided the activity has an ethical base.</li>
+                        <li><strong>The "Honey Bee & Flower" Analogy (p. 14-15):</strong> The book uses this to illustrate a mutually beneficial relationship. The businessman (bee) takes profit (honey) from the consumer (flower). In return, the bee helps the flower multiply (pollination). This is a "<span class="highlight-primary">Symbiosis</span>" where both grow, provided the activity has an ethical base.</li>
                         <li><strong>Building Trust and <span class="highlight-green">Goodwill</span>:</strong> Ethical behavior builds a positive reputation and a respected public image for the company.</li>
-                        <li><strong>Long-Term Dividends:</strong> A good reputation and public respect bring "<span class="highlight-blue">enormous dividends</span>" in the long run, far outweighing short-term unethical gains.</li>
+                        <li><strong>Long-Term Dividends:</strong> A good reputation and public respect bring "<span class="highlight-primary">enormous dividends</span>" in the long run, far outweighing short-term unethical gains.</li>
                     </ul>
 
                     <h3 class="headline-green">3. The Role of Ethics: Normative vs. Descriptive</h3>
                     <p>The book (p. 19) makes a crucial distinction:</p>
                     <ul>
-                        <li><strong><span class="highlight-blue">Normative Study</span> (This is what Ethics is):</strong> A study of what *should be*. It attempts to determine what is right and wrong and reach conclusions.</li>
+                        <li><strong><span class="highlight-primary">Normative Study</span> (This is what Ethics is):</strong> A study of what *should be*. It attempts to determine what is right and wrong and reach conclusions.</li>
                         <li><strong><span class="highlight-green">Descriptive Study</span> (This is what Social Sciences do):</strong> A study of *what is*. It simply describes the moral standards of a group without judging them.</li>
                     </ul>
 
                     <h3 class="headline-green">4. Theoretical Approaches: Dualism vs. Monism</h3>
                     <p>This is a key philosophical point from the book (p. 25-28):</p>
                     <ul>
-                        <li><strong>1. <span class="highlight-blue">Dualism</span> (The Dualistic Approach):</strong>
+                        <li><strong>1. <span class="highlight-primary">Dualism</span> (The Dualistic Approach):</strong>
                             <ul>
                                 <li>Views "economics (profit)" and "morality (ethics)" as two opposing poles in constant conflict. It creates an "<span class="highlight-green">either-or</span>" situation.</li>
                                 <li><strong>Its Problem:</strong> This approach is seen as dysfunctional, throwing "sand into the machinery" of the economy. Asking a company to sacrifice profit for morality makes it vulnerable to competition and failure.</li>
                             </ul>
                         </li>
-                        <li><strong>2. <span class="highlight-blue">Monism</span> (The Monistic Approach):</strong>
+                        <li><strong>2. <span class="highlight-primary">Monism</span> (The Monistic Approach):</strong>
                             <ul>
                                 <li>The modern view. It sees economics and morality as "<span class="highlight-green">two sides of the same coin</span>."</li>
-                                <li>It sees no conflict. Ethical behavior is reframed as intelligent "<span class="highlight-blue">Risk Management</span>."</li>
-                                <li><strong>How?</strong> Ignoring ethics is a major "risk" (e.g., consumer boycotts, reputational damage). Therefore, acting ethically is a form of "<span class="highlight-green">intelligent self-interest</span>" that protects the company's long-term viability and is "<span class="highlight-blue">incentive-compatible</span>."</li>
+                                <li>It sees no conflict. Ethical behavior is reframed as intelligent "<span class="highlight-primary">Risk Management</span>."</li>
+                                <li><strong>How?</strong> Ignoring ethics is a major "risk" (e.g., consumer boycotts, reputational damage). Therefore, acting ethically is a form of "<span class="highlight-green">intelligent self-interest</span>" that protects the company's long-term viability and is "<span class="highlight-primary">incentive-compatible</span>."</li>
                             </ul>
                         </li>
                     </ul>
@@ -583,9 +640,9 @@
                     <h3 class="headline-green">5. The Three Types of Responsibility</h3>
                     <p>Based on the monistic approach, a company has three types of responsibility (p. 37):</p>
                     <ol>
-                        <li><strong><span class="highlight-blue">Behavioral Responsibility</span>:</strong> Responsibility for its own direct actions (e.g., product quality, truthful advertising).</li>
+                        <li><strong><span class="highlight-primary">Behavioral Responsibility</span>:</strong> Responsibility for its own direct actions (e.g., product quality, truthful advertising).</li>
                         <li><strong><span class="highlight-green">Regulatory Responsibility</span>:</strong> Responsibility to participate in the "improvement of the social or political order" it operates in.</li>
-                        <li><strong><span class="highlight-blue">Discourse Responsibility</span>:</strong> Responsibility to actively participate in the public discourse (discussion) on social and political foundations.</li>
+                        <li><strong><span class="highlight-primary">Discourse Responsibility</span>:</strong> Responsibility to actively participate in the public discourse (discussion) on social and political foundations.</li>
                     </ol>
 
                     <div class="mt-8 p-4 bg-secondary-50 dark:bg-secondary-800/50 rounded-lg not-prose">
@@ -628,27 +685,27 @@
                     <h3 class="headline-green">1. Four Key Elements of an Ethics Foundation</h3>
                     <p>To make ethics practical, the book (p. 43-44) states a company needs four elements:</p>
                     <ol>
-                        <li><strong>A <span class="highlight-blue">Strong Code of Ethics</span>:</strong> A written document informing employees of the company's vision, image, and goals.</li>
+                        <li><strong>A <span class="highlight-primary">Strong Code of Ethics</span>:</strong> A written document informing employees of the company's vision, image, and goals.</li>
                         <li><strong><span class="highlight-green">Ethics Training</span>:</strong> To ensure the code is understood and followed, rather than just being "on paper."</li>
-                        <li><strong><span class="highlight-blue">Ethics Coach</span>:</strong> A confidential resource (in-house or outsourced) to help employees navigate complex ethical dilemmas.</li>
-                        <li><strong><span class="highlight-green">Confidential Reporting Systems</span>:</strong> A means for employees to report misconduct "<span class="highlight-blue">without fear of reprisal</span>."</li>
+                        <li><strong><span class="highlight-primary">Ethics Coach</span>:</strong> A confidential resource (in-house or outsourced) to help employees navigate complex ethical dilemmas.</li>
+                        <li><strong><span class="highlight-green">Confidential Reporting Systems</span>:</strong> A means for employees to report misconduct "<span class="highlight-primary">without fear of reprisal</span>."</li>
                     </ol>
 
                     <h3 class="headline-green">2. Advantages of Business Ethics</h3>
                     <p>The book (p. 45-47) links ethical conduct directly to financial performance:</p>
                     <ul>
-                        <li><strong><span class="highlight-blue">Attracting and Retaining Talent</span>:</strong>
+                        <li><strong><span class="highlight-primary">Attracting and Retaining Talent</span>:</strong>
                             <ul>
                                 <li>People aspire to work for organizations with high ethical values.</li>
                                 <li>An ethical environment creates "<span class="highlight-green">trust</span>," which fosters teamwork, loyalty, and productivity.</li>
                             </ul>
                         </li>
-                        <li><strong><span class="highlight-blue">Investor Loyalty</span>:</strong>
+                        <li><strong><span class="highlight-primary">Investor Loyalty</span>:</strong>
                             <ul>
                                 <li>Investors are increasingly aware that an ethical climate provides a foundation for "<span class="highlight-green">efficiency, productivity, and profits</span>."</li>
                             </ul>
                         </li>
-                        <li><strong><span class="highlight-blue">Customer Satisfaction</span>:</strong>
+                        <li><strong><span class="highlight-primary">Customer Satisfaction</span>:</strong>
                             <ul>
                                 <li>Ethical conduct builds a strong public image and enduring relationships.</li>
                                 <li>It makes customers "<span class="highlight-green">more tolerant</span>" of occasional mistakes because trust has been established.</li>
@@ -659,14 +716,14 @@
                     <h3 class="headline-green">3. Building a Moral Culture</h3>
                     <p>Key concepts for building this culture (p. 47-53):</p>
                     <ul>
-                        <li><strong><span class="highlight-blue">Moral Leadership</span>:</strong> This is the starting point. Leadership must establish the organization's values and set the pace.</li>
+                        <li><strong><span class="highlight-primary">Moral Leadership</span>:</strong> This is the starting point. Leadership must establish the organization's values and set the pace.</li>
                         <li><strong>"<span class="highlight-green">Motivated Blindness</span>":</strong>
                             <ul>
                                 <li>This concept (p. 50) explains *why* people fail to notice unethical behavior.</li>
                                 <li>It's often because "it is not in one's interest to see it," they are busy, or they are not positive ("I just feel that something's wrong").</li>
                             </ul>
                         </li>
-                        <li><strong>"<span class="highlight-blue">Choice Architecture</span>":</strong>
+                        <li><strong>"<span class="highlight-primary">Choice Architecture</span>":</strong>
                             <ul>
                                 <li>(p. 52) This involves designing systems and processes that "<span class="highlight-green">nudge</span>" people toward making better, more ethical choices.</li>
                                 <li><strong>Book Example:</strong> Changing a hiring process to judge candidates *side-by-side* rather than one at a time. This was found to remove gender bias and forced managers to focus on performance data.</li>
@@ -677,15 +734,15 @@
                     <h3 class="headline-green">4. Core Principles of Ethical Behavior</h3>
                     <p>The book (p. 54-58) lists characteristics that most people associate with ethical behavior. These are the foundation of a moral culture:</p>
                     <ul>
-                        <li><strong><span class="highlight-blue">Honesty</span>:</strong> Being truthful in all dealings, not deliberately misleading or deceiving others.</li>
+                        <li><strong><span class="highlight-primary">Honesty</span>:</strong> Being truthful in all dealings, not deliberately misleading or deceiving others.</li>
                         <li><strong><span class="highlight-green">Integrity</span>:</strong> Demonstrating "the courage of their convictions" by doing what is right even under pressure.</li>
-                        <li><strong><span class="highlight-blue">Promise-Keeping & Trustworthiness</span>:</strong> Fulfilling the letter and spirit of commitments.</li>
+                        <li><strong><span class="highlight-primary">Promise-Keeping & Trustworthiness</span>:</strong> Fulfilling the letter and spirit of commitments.</li>
                         <li><strong><span class="highlight-green">Loyalty</span>:</strong> Demonstrating fidelity to persons and institutions, and not using confidential information for personal advantage.</li>
-                        <li><strong><span class="highlight-blue">Fairness</span>:</strong> Being just in all dealings, not exercising power arbitrarily, and being open-minded.</li>
+                        <li><strong><span class="highlight-primary">Fairness</span>:</strong> Being just in all dealings, not exercising power arbitrarily, and being open-minded.</li>
                         <li><strong><span class="highlight-green">Concern for Others</span>:</strong> Being caring, compassionate, and kind; seeking to cause the "least harm and the greatest positive good."</li>
-                        <li><strong><span class="highlight-blue">Respect for Others</span>:</strong> Demonstrating respect for human dignity, privacy, and rights.</li>
+                        <li><strong><span class="highlight-primary">Respect for Others</span>:</strong> Demonstrating respect for human dignity, privacy, and rights.</li>
                         <li><strong><span class="highlight-green">Law Abiding</span>:</strong> Abiding by all laws, rules, and regulations.</li>
-                        <li><strong><span class="highlight-blue">Accountability</span>:</strong> Accepting personal accountability for the ethical quality of decisions and omissions.</li>
+                        <li><strong><span class="highlight-primary">Accountability</span>:</strong> Accepting personal accountability for the ethical quality of decisions and omissions.</li>
                     </ul>
 
                     <div class="mt-8 p-4 bg-secondary-50 dark:bg-secondary-800/50 rounded-lg not-prose">
@@ -728,39 +785,39 @@
                     <h3 class="headline-green">1. Two Families of Ethical Theories</h3>
                     <p>The book (p. 64-65) explains the two main ways to judge an action:</p>
                     
-                    <h4>1. <strong><span class="highlight-blue">Consequential Theories</span></strong> (e.g., Utilitarianism)</h4>
+                    <h4>1. <strong><span class="highlight-primary">Consequential Theories</span></strong> (e.g., Utilitarianism)</h4>
                     <ul>
                         <li>Judges the rightness of an act based *only* on its *<span class="highlight-green">consequences</span>* (the results).</li>
-                        <li><strong><span class="highlight-blue">Utilitarianism</span>:</strong> The most famous example. "That action is best that produces the <span class="highlight-green">greatest good for the greatest number</span>."</li>
+                        <li><strong><span class="highlight-primary">Utilitarianism</span>:</strong> The most famous example. "That action is best that produces the <span class="highlight-green">greatest good for the greatest number</span>."</li>
                         <li>It is often summarized by the saying, "<strong>the ends justify the means</strong>."</li>
                         <li>The book distinguishes (p. 72-74):
                             <ul>
-                                <li><strong><span class="highlight-blue">Act Consequentialism</span>:</strong> Looks at every single moral choice anew. (Impractical for real life).</li>
+                                <li><strong><span class="highlight-primary">Act Consequentialism</span>:</strong> Looks at every single moral choice anew. (Impractical for real life).</li>
                                 <li><strong><span class="highlight-green">Rule Consequentialism</span>:</strong> Bases moral rules on their general consequences. (More practical, as individuals can just apply the rule).</li>
                             </ul>
                         </li>
                     </ul>
 
-                    <h4>2. <strong><span class="highlight-blue">Non-Consequential Theories</span></strong> (e.g., <strong><span class="highlight-green">Deontology</span></strong>)</h4>
+                    <h4>2. <strong><span class="highlight-primary">Non-Consequential Theories</span></strong> (e.g., <strong><span class="highlight-green">Deontology</span></strong>)</h4>
                     <ul>
-                        <li>Judges the rightness of an act based on something *other than* its consequences, such as "<span class="highlight-blue">rules</span>," "<span class="highlight-green">duties</span>," or "<span class="highlight-blue">rights</span>."</li>
-                        <li><strong><span class="highlight-green">Kant's Moral Theory</span> (p. 83):</strong> The prime example. It states that actions have moral value only if done from a sense of duty (a "<span class="highlight-blue">good will</span>"), regardless of the outcome.
+                        <li>Judges the rightness of an act based on something *other than* its consequences, such as "<span class="highlight-primary">rules</span>," "<span class="highlight-green">duties</span>," or "<span class="highlight-primary">rights</span>."</li>
+                        <li><strong><span class="highlight-green">Kant's Moral Theory</span> (p. 83):</strong> The prime example. It states that actions have moral value only if done from a sense of duty (a "<span class="highlight-primary">good will</span>"), regardless of the outcome.
                             <ul>
                                 <li><strong>Key Principle:</strong> We must always treat people as "<span class="highlight-green">ends in themselves</span>" and never "<strong>merely as a means to an end</strong>."</li>
                             </ul>
                         </li>
-                        <li><strong><span class="highlight-blue">Natural Law Theory</span> (p. 84):</strong> Another example. It's based on the notion that right actions are those that accord with the moral principles embedded in nature itself.</li>
+                        <li><strong><span class="highlight-primary">Natural Law Theory</span> (p. 84):</strong> Another example. It's based on the notion that right actions are those that accord with the moral principles embedded in nature itself.</li>
                     </ul>
 
                     <h3 class="headline-green">2. Problems with Pure Consequentialism</h3>
                     <p>While "the greatest good" sounds appealing, the book (p. 78-83) highlights its significant problems:</p>
                     <ul>
-                        <li><strong><span class="highlight-blue">Conflicts with Justice & Rights</span>:</strong> It could justify punishing an innocent person (e.g., framing them) to stop a massive riot that would kill thousands. The *consequence* is good (1 death vs. 1000s), but the *act* (injustice) is inherently wrong.</li>
-                        <li><strong><span class="highlight-green">Ignores Special Obligations</span>:</strong> The theory demands we treat everyone equally. But in reality, we have "<span class="highlight-blue">agent-relative duties</span>" (special obligations) to our family and friends that we do not have to strangers.</li>
+                        <li><strong><span class="highlight-primary">Conflicts with Justice & Rights</span>:</strong> It could justify punishing an innocent person (e.g., framing them) to stop a massive riot that would kill thousands. The *consequence* is good (1 death vs. 1000s), but the *act* (injustice) is inherently wrong.</li>
+                        <li><strong><span class="highlight-green">Ignores Special Obligations</span>:</strong> The theory demands we treat everyone equally. But in reality, we have "<span class="highlight-primary">agent-relative duties</span>" (special obligations) to our family and friends that we do not have to strangers.</li>
                         <li><strong>It is "<strong>Too Demanding</strong>":</strong> It implies that *any* act that isn't *maximizing* the most good (like spending money on a vacation instead of giving it all to charity) is morally *wrong*. This eliminates the concept of "<span class="highlight-green">supererogatory</span>" actions (actions that are good, but not strictly required).</li>
                     </ul>
 
-                    <h3 class="headline-green">3. What is an "<span class="highlight-blue">Ethical Dilemma</span>"?</h3>
+                    <h3 class="headline-green">3. What is an "<span class="highlight-primary">Ethical Dilemma</span>"?</h3>
                     <blockquote>
                         (p. 99) An ethical dilemma is a situation in which a person has to choose between two options, both of which are morally correct but in conflict.
                     </blockquote>
@@ -822,8 +879,8 @@
                 </div>
                 
                 <div class="overflow-hidden border border-secondary-200 dark:border-secondary-700 rounded-lg">
-                    <div class="overflow-x-auto relative max-h-[70vh]">
-                        <table class="w-full min-w-full divide-y divide-secondary-200 dark:divide-secondary-700">
+                    <div class="relative max-h-[70vh] overflow-y-auto">
+                        <table id="vocab-table" class="w-full min-w-full">
                             <thead class="bg-secondary-50 dark:bg-secondary-800 sticky top-0 z-10">
                                 <tr>
                                     <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-secondary-500 dark:text-secondary-400 uppercase tracking-wider">
@@ -837,121 +894,121 @@
                                     </th>
                                 </tr>
                             </thead>
-                            <tbody class="divide-y divide-secondary-200 dark:divide-secondary-700 bg-white dark:bg-secondary-900">
+                            <tbody class="bg-white dark:bg-secondary-900">
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Ethics</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">Principles or standards of human conduct that govern behavior.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">الأخلاق</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Ethics</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">Principles or standards of human conduct that govern behavior.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">الأخلاق</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Business Ethics</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">A 'code of conduct' that businesses are expected to follow, balancing profits with stakeholder needs.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">أخلاقيات العمل</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Business Ethics</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">A 'code of conduct' that businesses are expected to follow, balancing profits with stakeholder needs.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">أخلاقيات العمل</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Stakeholders</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">Individuals or groups invested in the company, including employees, customers, suppliers, and shareholders.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">أصحاب المصلحة</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Stakeholders</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">Individuals or groups invested in the company, including employees, customers, suppliers, and shareholders.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">أصحاب المصلحة</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Fiduciary Responsibility</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">A legal or ethical obligation to act in the best interests of another party (e.g., shareholders).</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">المسؤولية الائتمانية</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Fiduciary Responsibility</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">A legal or ethical obligation to act in the best interests of another party (e.g., shareholders).</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">المسؤولية الائتمانية</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Symbiosis</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">A mutually beneficial relationship between different groups.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">التكافل / التعايش</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Symbiosis</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">A mutually beneficial relationship between different groups.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">التكافل / التعايش</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Normative Study</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">A study that attempts to determine what *should* be, i.e., what is right and wrong.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">دراسة معيارية</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Normative Study</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">A study that attempts to determine what *should* be, i.e., what is right and wrong.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">دراسة معيارية</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Descriptive Study</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">A study that describes *what is* without making judgments about right or wrong.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">دراسة وصفية</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Descriptive Study</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">A study that describes *what is* without making judgments about right or wrong.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">دراسة وصفية</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Dualism</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">A theoretical concept that views economics (profit) and morality (ethics) as two opposing poles.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">الثنائية</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Dualism</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">A theoretical concept that views economics (profit) and morality (ethics) as two opposing poles.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">الثنائية</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Monism</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">A theoretical concept that views morality and economics as two sides of the same coin.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">الأحادية / الوحدوية</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Monism</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">A theoretical concept that views morality and economics as two sides of the same coin.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">الأحادية / الوحدوية</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Incentive-Compatible</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">A structure where acting in one's own self-interest also achieves the desired ethical outcome.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">متوافق مع الحوافز</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Incentive-Compatible</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">A structure where acting in one's own self-interest also achieves the desired ethical outcome.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">متوافق مع الحوافز</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Reprisal</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">An act of retaliation or revenge.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">انتقام / عمل انتقامي</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Reprisal</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">An act of retaliation or revenge.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">انتقام / عمل انتقامي</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Motivated Blindness</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">The tendency to overlook or fail to notice unethical behavior when it is not in one's interest to see it.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">العمى المُحفَّز</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Motivated Blindness</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">The tendency to overlook or fail to notice unethical behavior when it is not in one's interest to see it.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">العمى المُحفَّز</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Choice Architecture</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">Designing the way options are presented to people to influence their decisions towards better outcomes.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">هندسة الاختيار</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Choice Architecture</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">Designing the way options are presented to people to influence their decisions towards better outcomes.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">هندسة الاختيار</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Consequentialism</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">An ethical theory that judges the rightness of an act based *only* on its consequences.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">العواقبية / النظرية العواقبية</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Consequentialism</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">An ethical theory that judges the rightness of an act based *only* on its consequences.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">العواقبية / النظرية العواقبية</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Utilitarianism</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">A form of consequentialism stating that the best action is the one that maximizes overall good ("greatest good for the greatest number").</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">النفعية</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Utilitarianism</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">A form of consequentialism stating that the best action is the one that maximizes overall good ("greatest good for the greatest number").</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">النفعية</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Deontology</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">An ethical theory that judges the rightness of an act based on rules or duties, regardless of the consequences.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">علم الواجبات / الديونتولوجيا</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Deontology</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">An ethical theory that judges the rightness of an act based on rules or duties, regardless of the consequences.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">علم الواجبات / الديونتولوجيا</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Categorical Imperative</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">(In Kant's theory) A moral law that is unconditional or absolute for all agents.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">الأمر القطعي / الحتمي</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Categorical Imperative</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">(In Kant's theory) A moral law that is unconditional or absolute for all agents.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">الأمر القطعي / الحتمي</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Supererogatory</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">An action that is considered good or morally admirable but is not strictly required.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">فعل تطوعي / فوق الواجب</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Supererogatory</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">An action that is considered good or morally admirable but is not strictly required.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">فعل تطوعي / فوق الواجب</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Ethical Dilemma</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">A situation where a person must choose between two morally correct but conflicting options.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">المعضلة الأخلاقية</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Ethical Dilemma</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">A situation where a person must choose between two morally correct but conflicting options.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">المعضلة الأخلاقية</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Integrity</span></td>
-                                    <td class_name="px-6 py-4 text-sm def-gray">Demonstrating personal integrity and the courage of convictions by doing what is right even under pressure.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">النزاهة / الاستقامة</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Integrity</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">Demonstrating personal integrity and the courage of convictions by doing what is right even under pressure.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">النزاهة / الاستقامة</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Loyalty</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">Demonstrating fidelity and loyalty to persons and institutions; not using confidential information for personal advantage.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">الولاء</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Loyalty</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">Demonstrating fidelity and loyalty to persons and institutions; not using confidential information for personal advantage.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">الولاء</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Fairness</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">Being fair and just in all dealings; not exercising power arbitrarily or taking undue advantage of others' mistakes.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">العدالة / الإنصاف</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Fairness</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">Being fair and just in all dealings; not exercising power arbitrarily or taking undue advantage of others' mistakes.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">العدالة / الإنصاف</td>
                                 </tr>
                                 <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Accountability</span></td>
-                                    <td class="px-6 py-4 text-sm def-gray">Acknowledging and accepting personal accountability for the ethical quality of decisions and omissions.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">المساءلة</td>
+                                    <td data-label="Term" class="px-6 py-4 text-sm font-medium"><span class="highlight-primary">Accountability</span></td>
+                                    <td data-label="English Definition" class="px-6 py-4 text-sm def-gray">Acknowledging and accepting personal accountability for the ethical quality of decisions and omissions.</td>
+                                    <td data-label="Arabic Translation" class="px-6 py-4 text-sm trans-primary-dark">المساءلة</td>
                                 </tr>
                             </tbody>
                         </table>
