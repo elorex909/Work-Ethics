@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Ethics - Chapter Summaries</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=typography,forms"></script>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': {
+                            50: '#fdf2f8',
+                            100: '#fce7f3',
+                            200: '#fbcfe8',
+                            300: '#f9a8d4',
+                            400: '#f472b6',
+                            500: '#ec4899',
+                            600: '#db2777',
+                            700: '#be185d',
+                            800: '#9d174d',
+                            900: '#831843',
+                        },
+                        'secondary': {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.5s ease-out',
+                        'fade-in': 'fadeIn 0.5s ease-out',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        html {
+            scroll-padding-top: 5rem;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fff;
+            color: #1e293b;
+            transition-property: background-color, color;
+            transition-duration: 300ms;
+        }
+        .dark body {
+            background-color: #0f172a;
+            color: #f1f5f9;
+        }
+
+        .header {
+            background-color: rgba(255, 255, 255, 0.8);
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            border-bottom-width: 1px;
+            border-color: #e2e8f0;
+            transition-property: background-color, border-color;
+            transition-duration: 300ms;
+        }
+        .dark .header {
+            background-color: rgba(15, 23, 42, 0.8);
+            border-color: #334155;
+        }
+        
+        .nav-link {
+            color: #475569;
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition-property: color;
+            transition-duration: 300ms;
+        }
+        .dark .nav-link {
+            color: #cbd5e1;
+        }
+        .nav-link:hover {
+            color: #db2777;
+        }
+        .dark .nav-link:hover {
+            color: #f472b6;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.5rem;
+            border-width: 1px;
+            border-color: transparent;
+            border-radius: 0.375rem;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            font-size: 1rem;
+            font-weight: 500;
+            transition-property: all;
+            transition-duration: 300ms;
+        }
+        .btn-primary {
+            background-color: #db2777;
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background-color: #be185d;
+        }
+        .btn-primary:focus {
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+            box-shadow: 0 0 0 2px #fff, 0 0 0 4px #ec4899;
+        }
+        
+        .btn-secondary {
+            background-color: #e2e8f0;
+            color: #1e293b;
+        }
+        .btn-secondary:hover {
+            background-color: #cbd5e1;
+        }
+        .dark .btn-secondary {
+            background-color: #334155;
+            color: #f1f5f9;
+        }
+        .dark .btn-secondary:hover {
+            background-color: #475569;
+        }
+        .btn-secondary:focus {
+             outline: 2px solid transparent;
+            outline-offset: 2px;
+            box-shadow: 0 0 0 2px #fff, 0 0 0 4px #64748b;
+        }
+        .dark .btn-secondary:focus {
+             box-shadow: 0 0 0 2px #0f172a, 0 0 0 4px #64748b;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 0.75rem;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            border-width: 1px;
+            border-color: #e2e8f0;
+            transition-property: all;
+            transition-duration: 300ms;
+        }
+        .dark .card {
+            background-color: #1e293b;
+            border-color: #334155;
+        }
+        .card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .page-container {
+            max-width: 80rem;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2rem 1rem;
+        }
+        @media (min-width: 640px) {
+            .page-container {
+                padding: 3rem 1.5rem;
+            }
+        }
+        @media (min-width: 1024px) {
+            .page-container {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+        
+        .page-content-box {
+            background-color: #fff;
+            border-radius: 0.75rem;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            border-width: 1px;
+            border-color: #e2e8f0;
+            padding: 1.5rem;
+        }
+        .dark .page-content-box {
+            background-color: #1e293b;
+            border-color: #334155;
+        }
+        @media (min-width: 640px) {
+            .page-content-box {
+                padding: 2rem;
+            }
+        }
+
+        .prose blockquote {
+            border-left-color: #ec4899;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+        .dark .prose blockquote {
+            border-left-color: #f472b6;
+            background-color: #1e293b;
+            color: #cbd5e1;
+        }
+
+        .highlight-blue {
+            color: #2563eb;
+            font-weight: 600;
+        }
+        .dark .highlight-blue {
+            color: #60a5fa;
+        }
+        .highlight-green {
+            color: #059669;
+            font-weight: 600;
+        }
+        .dark .highlight-green {
+            color: #34d399;
+        }
+
+        .headline-green {
+            color: #047857;
+            font-weight: 600;
+        }
+        .dark .headline-green {
+            color: #6ee7b7;
+        }
+        
+        .def-gray {
+            color: #475569;
+        }
+        .dark .def-gray {
+            color: #cbd5e1;
+        }
+        
+        .trans-purple {
+            color: #7c3aed;
+            font-weight: 500;
+        }
+        .dark .trans-purple {
+            color: #a78bfa;
+        }
+
+        /* [Update] New classes for themed vocabulary table */
+        .highlight-primary {
+            color: #db2777; /* primary-600 */
+            font-weight: 600;
+        }
+        .dark .highlight-primary {
+            color: #f472b6; /* primary-400 */
+        }
+        .trans-primary-dark {
+            color: #be185d; /* primary-700 */
+            font-weight: 500;
+        }
+        .dark .trans-primary-dark {
+            color: #f9a8d4; /* primary-300 */
+        }
+
+
+        .footer {
+            background-color: #f8fafc;
+            border-top-width: 1px;
+            border-color: #e2e8f0;
+            transition-property: background-color, border-color;
+            transition-duration: 300ms;
+        }
+        .dark .footer {
+            background-color: #1e293b;
+            border-color: #334155;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="header">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-xl font-bold text-primary-600 dark:text-primary-400 flex items-center" id="home-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                        Business Ethics
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="mr-10 flex items-center space-x-1">
+                        <a href="#" class="nav-link page-link" data-page="chapter-1-page">Chapter 1</a>
+                        <a href="#" class="nav-link page-link" data-page="chapter-2-page">Chapter 2</a>
+                        <a href="#" class="nav-link page-link" data-page="chapter-3-page">Chapter 3</a>
+                        <a href="#" class="nav-link page-link" data-page="new-vocabs-page">Vocabulary</a>
+                        <a href="#ask-question" class="scroll-link btn btn-primary ml-4">Ask a Question</a>
+                        <button type="button" class="theme-toggle ml-4 text-secondary-500 dark:text-secondary-400 hover:bg-secondary-100 dark:hover:bg-secondary-700 rounded-lg p-2 transition-colors duration-300">
+                            <svg class="theme-toggle-dark-icon hidden h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                            <svg class="theme-toggle-light-icon hidden h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464a1 1 0 101.414 1.414l.707-.707a1 1 0 10-1.414-1.414l-.707.707zM3 11a1 1 0 100-2H2a1 1 0 100 2h1z"></path></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="-ml-2 flex md:hidden">
+                    <button type="button" class="theme-toggle ml-4 text-secondary-500 dark:text-secondary-400 hover:bg-secondary-100 dark:hover:bg-secondary-700 rounded-lg p-2 transition-colors duration-300">
+                        <svg class="theme-toggle-dark-icon hidden h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                        <svg class="theme-toggle-light-icon hidden h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464a1 1 0 101.414 1.414l.707-.707a1 1 0 10-1.414-1.414l-.707.707zM3 11a1 1 0 100-2H2a1 1 0 100 2h1z"></path></svg>
+                    </button>
+                    <button type="button" class="bg-white dark:bg-secondary-800 rounded-md p-2 inline-flex items-center justify-center text-secondary-400 hover:text-secondary-500 hover:bg-secondary-100 dark:hover:bg-secondary-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 transition-colors duration-300" id="mobile-menu-btn">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="nav-link page-link block" data-page="chapter-1-page">Chapter 1</a>
+                <a href="#" class="nav-link page-link block" data-page="chapter-2-page">Chapter 2</a>
+                <a href="#" class="nav-link page-link block" data-page="chapter-3-page">Chapter 3</a>
+                <a href="#" class="nav-link page-link block" data-page="new-vocabs-page">Vocabulary</a>
+                <a href="#ask-question" class="scroll-link btn btn-primary block w-full text-center mt-2">Ask a Question</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="main-content">
+        <section class="relative bg-gradient-to-br from-primary-500 to-purple-600 text-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 sm:py-40">
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl animate-fade-in-up">
+                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-200">
+                            Business Ethics
+                        </span>
+                    </h1>
+                    <p class="mt-6 text-xl max-w-3xl mx-auto text-primary-100 animate-fade-in-up" style="animation-delay: 0.1s">
+                        An educational summary of the first three chapters, providing core concepts and insights into ethical business practices.
+                    </p>
+                    <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up" style="animation-delay: 0.2s">
+                        <a href="#chapters" class="scroll-link btn bg-white text-primary-600 hover:bg-secondary-100 shadow-lg">
+                            Explore Chapters
+                        </a>
+                        <a href="#ask-question" class="scroll-link btn bg-primary-700 hover:bg-primary-800 text-white shadow-lg">
+                            Ask a Question
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="chapters" class="py-16 sm:py-24 bg-white dark:bg-secondary-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 sm:mb-16">
+                    <h2 class="text-3xl font-bold tracking-tight text-secondary-900 dark:text-white sm:text-4xl">Chapter Overviews</h2>
+                    <p class="mt-4 text-lg text-secondary-600 dark:text-secondary-400 max-w-2xl mx-auto">
+                        Explore the key concepts from the first three chapters of Business Ethics
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="card relative overflow-hidden group animate-fade-in-up transition-all duration-300 hover:scale-[1.02] hover:shadow-xl" style="animation-delay: 0.1s">
+                        <div class="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 text-primary-500 opacity-10 dark:opacity-20 group-hover:opacity-20 transition-opacity duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
+                        </div>
+                        
+                        <div class="p-6 relative">
+                            <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-200 dark:group-hover:bg-primary-800/50 transition-colors duration-300 animate-float">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600 dark:text-primary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-secondary-900 dark:text-white mb-2">Chapter 1</h3>
+                            <p class="text-secondary-600 dark:text-secondary-400 mb-4">Meaning of Business Ethics</p>
+                            <p class="text-sm text-secondary-500 dark:text-secondary-400 mb-4">
+                                Understanding the foundation of business ethics, its importance, and the dualistic vs monistic approaches.
+                            </p>
+                            <a href="#" class="page-link font-medium text-primary-600 dark:text-primary-400 group-hover:underline inline-flex items-center" data-page="chapter-1-page">
+                                View Summary
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card relative overflow-hidden group animate-fade-in-up transition-all duration-300 hover:scale-[1.02] hover:shadow-xl" style="animation-delay: 0.2s">
+                        <div class="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 text-primary-500 opacity-10 dark:opacity-20 group-hover:opacity-20 transition-opacity duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        
+                        <div class="p-6 relative">
+                            <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-200 dark:group-hover:bg-primary-800/50 transition-colors duration-300 animate-float">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600 dark:text-primary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-secondary-900 dark:text-white mb-2">Chapter 2</h3>
+                            <p class="text-secondary-600 dark:text-secondary-400 mb-4">Elements and Advantages of Business Ethics</p>
+                            <p class="text-sm text-secondary-500 dark:text-secondary-400 mb-4">
+                                Exploring the practical elements of ethical business practices and their tangible benefits.
+                            </p>
+                            <a href="#" class="page-link font-medium text-primary-600 dark:text-primary-400 group-hover:underline inline-flex items-center" data-page="chapter-2-page">
+                                View Summary
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card relative overflow-hidden group animate-fade-in-up transition-all duration-300 hover:scale-[1.02] hover:shadow-xl" style="animation-delay: 0.3s">
+                        <div class="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 text-primary-500 opacity-10 dark:opacity-20 group-hover:opacity-20 transition-opacity duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                            </svg>
+                        </div>
+
+                        <div class="p-6 relative">
+                            <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-200 dark:group-hover:bg-primary-800/50 transition-colors duration-300 animate-float">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600 dark:text-primary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-secondary-900 dark:text-white mb-2">Chapter 3</h3>
+                            <p class="text-secondary-600 dark:text-secondary-400 mb-4">Process of Ethical Decision Making</p>
+                            <p class="text-sm text-secondary-500 dark:text-secondary-400 mb-4">
+                                Learning about consequential vs non-consequential theories and the 9-step decision-making process.
+                            </p>
+                            <a href="#" class="page-link font-medium text-primary-600 dark:text-primary-400 group-hover:underline inline-flex items-center" data-page="chapter-3-page">
+                                View Summary
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ask-question" class="py-16 sm:py-24 bg-secondary-50 dark:bg-secondary-800/50">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-secondary-900 dark:text-white sm:text-4xl">Ask a Question</h2>
+                    <p class="mt-4 text-lg text-secondary-600 dark:text-secondary-400">
+                        Have a question about these chapters or business ethics in general? Fill out the form below.
+                    </p>
+                </div>
+                
+                <div class="card p-6 sm:p-8">
+                    <form action="https://formspree.io/f/meovzwkd" method="POST" class="space-y-6">
+                        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-secondary-700 dark:text-secondary-300 mb-1">Name</label>
+                                <input type="text" name="name" id="name" autocomplete="name" required class="form-input w-full rounded-lg bg-white dark:bg-secondary-800 border-secondary-300 dark:border-secondary-600 focus:border-primary-500 focus:ring-primary-500 transition duration-300">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-secondary-700 dark:text-secondary-300 mb-1">Email</label>
+                                <input id="email" name="email" type="email" autocomplete="email" required class="form-input w-full rounded-lg bg-white dark:bg-secondary-800 border-secondary-300 dark:border-secondary-600 focus:border-primary-500 focus:ring-primary-500 transition duration-300">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-secondary-700 dark:text-secondary-300 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="5" required class="form-textarea w-full rounded-lg bg-white dark:bg-secondary-800 border-secondary-300 dark:border-secondary-600 focus:border-primary-500 focus:ring-primary-500 transition duration-300"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary w-full">
+                                Submit Question
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="chapter-1-page" class="chapter-page hidden">
+        <div class="page-container max-w-4xl mx-auto">
+            <div class="flex items-center mb-6">
+                <a href="#" class="back-link flex items-center text-primary-600 dark:text-primary-400 hover:underline">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    Back to All Chapters
+                </a>
+            </div>
+            
+            <div class="page-content-box animate-fade-in">
+                <div class="mb-6 pb-6 border-b border-secondary-200 dark:border-secondary-700">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-primary-800 dark:bg-primary-900/30 dark:text-primary-400">
+                        Chapter 1
+                    </span>
+                    <h1 class="text-3xl font-bold mt-3 sm:text-4xl bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent dark:from-primary-400 dark:to-primary-300">
+                        Meaning of Business Ethics
+                    </h1>
+                </div>
+                
+                <div class="prose prose-lg dark:prose-invert max-w-none text-secondary-700 dark:text-secondary-300 prose-h3:font-semibold prose-p:leading-relaxed prose-li:my-1 prose-a:text-primary-600 dark:prose-a:text-primary-400">
+                    
+                    <h3 class="headline-green">1. The Meaning of "Business Ethics"</h3>
+                    <p>Business ethics refers to the principles and standards that guide behavior in the conduct of business. It is not an abstract concept but a practical necessity.</p>
+                    
+                    <blockquote>
+                        Business ethics refers to a '<span class="highlight-blue">code of conduct</span>' which businessmen are expected to follow while dealing with others... Businesses must balance their desire to <span class="highlight-green">maximize profits</span> against the needs of the <span class="highlight-blue">stakeholders</span>.
+                    </blockquote>
+                    
+                    <h4>Nature of Business Ethics (from p. 17)</h4>
+                    <ul>
+                        <li><strong>Based on Moral and Social Values:</strong> Includes concepts like self-control, consumer protection, and fair treatment.</li>
+                        <li><strong>Gives Protection to Social Groups:</strong> Such as consumers, employees, government, and shareholders.</li>
+                        <li><strong>Provides Basic Framework:</strong> It gives the social, cultural, and legal limits within which a business must operate.</li>
+                        <li><strong>Voluntary:</strong> It must be like <span class="highlight-green">self-discipline</span> and not just enforced by law.</li>
+                        <li><strong>Relative Term:</strong> What is considered ethical in one country may be taboo in another.</li>
+                    </ul>
+
+                    <h3 class="headline-green">2. The Importance of Business Ethics</h3>
+                    <ul>
+                        <li><strong>The "Honey Bee & Flower" Analogy (p. 14-15):</strong> The book uses this to illustrate a mutually beneficial relationship. The businessman (bee) takes profit (honey) from the consumer (flower). In return, the bee helps the flower multiply (pollination). This is a "<span class="highlight-blue">Symbiosis</span>" where both grow, provided the activity has an ethical base.</li>
+                        <li><strong>Building Trust and <span class="highlight-green">Goodwill</span>:</strong> Ethical behavior builds a positive reputation and a respected public image for the company.</li>
+                        <li><strong>Long-Term Dividends:</strong> A good reputation and public respect bring "<span class="highlight-blue">enormous dividends</span>" in the long run, far outweighing short-term unethical gains.</li>
+                    </ul>
+
+                    <h3 class="headline-green">3. The Role of Ethics: Normative vs. Descriptive</h3>
+                    <p>The book (p. 19) makes a crucial distinction:</p>
+                    <ul>
+                        <li><strong><span class="highlight-blue">Normative Study</span> (This is what Ethics is):</strong> A study of what *should be*. It attempts to determine what is right and wrong and reach conclusions.</li>
+                        <li><strong><span class="highlight-green">Descriptive Study</span> (This is what Social Sciences do):</strong> A study of *what is*. It simply describes the moral standards of a group without judging them.</li>
+                    </ul>
+
+                    <h3 class="headline-green">4. Theoretical Approaches: Dualism vs. Monism</h3>
+                    <p>This is a key philosophical point from the book (p. 25-28):</p>
+                    <ul>
+                        <li><strong>1. <span class="highlight-blue">Dualism</span> (The Dualistic Approach):</strong>
+                            <ul>
+                                <li>Views "economics (profit)" and "morality (ethics)" as two opposing poles in constant conflict. It creates an "<span class="highlight-green">either-or</span>" situation.</li>
+                                <li><strong>Its Problem:</strong> This approach is seen as dysfunctional, throwing "sand into the machinery" of the economy. Asking a company to sacrifice profit for morality makes it vulnerable to competition and failure.</li>
+                            </ul>
+                        </li>
+                        <li><strong>2. <span class="highlight-blue">Monism</span> (The Monistic Approach):</strong>
+                            <ul>
+                                <li>The modern view. It sees economics and morality as "<span class="highlight-green">two sides of the same coin</span>."</li>
+                                <li>It sees no conflict. Ethical behavior is reframed as intelligent "<span class="highlight-blue">Risk Management</span>."</li>
+                                <li><strong>How?</strong> Ignoring ethics is a major "risk" (e.g., consumer boycotts, reputational damage). Therefore, acting ethically is a form of "<span class="highlight-green">intelligent self-interest</span>" that protects the company's long-term viability and is "<span class="highlight-blue">incentive-compatible</span>."</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <h3 class="headline-green">5. The Three Types of Responsibility</h3>
+                    <p>Based on the monistic approach, a company has three types of responsibility (p. 37):</p>
+                    <ol>
+                        <li><strong><span class="highlight-blue">Behavioral Responsibility</span>:</strong> Responsibility for its own direct actions (e.g., product quality, truthful advertising).</li>
+                        <li><strong><span class="highlight-green">Regulatory Responsibility</span>:</strong> Responsibility to participate in the "improvement of the social or political order" it operates in.</li>
+                        <li><strong><span class="highlight-blue">Discourse Responsibility</span>:</strong> Responsibility to actively participate in the public discourse (discussion) on social and political foundations.</li>
+                    </ol>
+
+                    <div class="mt-8 p-4 bg-secondary-50 dark:bg-secondary-800/50 rounded-lg not-prose">
+                        <p class="text-sm text-secondary-600 dark:text-secondary-400">
+                            If you have any questions about this chapter, you can 
+                            <a href="#ask-question" class="scroll-link font-medium text-primary-600 dark:text-primary-400 hover:underline">
+                                get in touch
+                            </a>
+                            through this form.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="chapter-2-page" class="chapter-page hidden">
+        <div class="page-container max-w-4xl mx-auto">
+            <div class="flex items-center mb-6">
+                <a href="#" class="back-link flex items-center text-primary-600 dark:text-primary-400 hover:underline">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    Back to All Chapters
+                </a>
+            </div>
+            
+            <div class="page-content-box animate-fade-in">
+                <div class="mb-6 pb-6 border-b border-secondary-200 dark:border-secondary-700">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-primary-800 dark:bg-primary-900/30 dark:text-primary-400">
+                        Chapter 2
+                    </span>
+                    <h1 class="text-3xl font-bold mt-3 sm:text-4xl bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent dark:from-primary-400 dark:to-primary-300">
+                        Elements and Advantages of Business Ethics
+                    </h1>
+                </div>
+                
+                <div class="prose prose-lg dark:prose-invert max-w-none text-secondary-700 dark:text-secondary-300 prose-h3:font-semibold prose-p:leading-relaxed prose-li:my-1 prose-a:text-primary-600 dark:prose-a:text-primary-400">
+                    
+                    <h3 class="headline-green">1. Four Key Elements of an Ethics Foundation</h3>
+                    <p>To make ethics practical, the book (p. 43-44) states a company needs four elements:</p>
+                    <ol>
+                        <li><strong>A <span class="highlight-blue">Strong Code of Ethics</span>:</strong> A written document informing employees of the company's vision, image, and goals.</li>
+                        <li><strong><span class="highlight-green">Ethics Training</span>:</strong> To ensure the code is understood and followed, rather than just being "on paper."</li>
+                        <li><strong><span class="highlight-blue">Ethics Coach</span>:</strong> A confidential resource (in-house or outsourced) to help employees navigate complex ethical dilemmas.</li>
+                        <li><strong><span class="highlight-green">Confidential Reporting Systems</span>:</strong> A means for employees to report misconduct "<span class="highlight-blue">without fear of reprisal</span>."</li>
+                    </ol>
+
+                    <h3 class="headline-green">2. Advantages of Business Ethics</h3>
+                    <p>The book (p. 45-47) links ethical conduct directly to financial performance:</p>
+                    <ul>
+                        <li><strong><span class="highlight-blue">Attracting and Retaining Talent</span>:</strong>
+                            <ul>
+                                <li>People aspire to work for organizations with high ethical values.</li>
+                                <li>An ethical environment creates "<span class="highlight-green">trust</span>," which fosters teamwork, loyalty, and productivity.</li>
+                            </ul>
+                        </li>
+                        <li><strong><span class="highlight-blue">Investor Loyalty</span>:</strong>
+                            <ul>
+                                <li>Investors are increasingly aware that an ethical climate provides a foundation for "<span class="highlight-green">efficiency, productivity, and profits</span>."</li>
+                            </ul>
+                        </li>
+                        <li><strong><span class="highlight-blue">Customer Satisfaction</span>:</strong>
+                            <ul>
+                                <li>Ethical conduct builds a strong public image and enduring relationships.</li>
+                                <li>It makes customers "<span class="highlight-green">more tolerant</span>" of occasional mistakes because trust has been established.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h3 class="headline-green">3. Building a Moral Culture</h3>
+                    <p>Key concepts for building this culture (p. 47-53):</p>
+                    <ul>
+                        <li><strong><span class="highlight-blue">Moral Leadership</span>:</strong> This is the starting point. Leadership must establish the organization's values and set the pace.</li>
+                        <li><strong>"<span class="highlight-green">Motivated Blindness</span>":</strong>
+                            <ul>
+                                <li>This concept (p. 50) explains *why* people fail to notice unethical behavior.</li>
+                                <li>It's often because "it is not in one's interest to see it," they are busy, or they are not positive ("I just feel that something's wrong").</li>
+                            </ul>
+                        </li>
+                        <li><strong>"<span class="highlight-blue">Choice Architecture</span>":</strong>
+                            <ul>
+                                <li>(p. 52) This involves designing systems and processes that "<span class="highlight-green">nudge</span>" people toward making better, more ethical choices.</li>
+                                <li><strong>Book Example:</strong> Changing a hiring process to judge candidates *side-by-side* rather than one at a time. This was found to remove gender bias and forced managers to focus on performance data.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <h3 class="headline-green">4. Core Principles of Ethical Behavior</h3>
+                    <p>The book (p. 54-58) lists characteristics that most people associate with ethical behavior. These are the foundation of a moral culture:</p>
+                    <ul>
+                        <li><strong><span class="highlight-blue">Honesty</span>:</strong> Being truthful in all dealings, not deliberately misleading or deceiving others.</li>
+                        <li><strong><span class="highlight-green">Integrity</span>:</strong> Demonstrating "the courage of their convictions" by doing what is right even under pressure.</li>
+                        <li><strong><span class="highlight-blue">Promise-Keeping & Trustworthiness</span>:</strong> Fulfilling the letter and spirit of commitments.</li>
+                        <li><strong><span class="highlight-green">Loyalty</span>:</strong> Demonstrating fidelity to persons and institutions, and not using confidential information for personal advantage.</li>
+                        <li><strong><span class="highlight-blue">Fairness</span>:</strong> Being just in all dealings, not exercising power arbitrarily, and being open-minded.</li>
+                        <li><strong><span class="highlight-green">Concern for Others</span>:</strong> Being caring, compassionate, and kind; seeking to cause the "least harm and the greatest positive good."</li>
+                        <li><strong><span class="highlight-blue">Respect for Others</span>:</strong> Demonstrating respect for human dignity, privacy, and rights.</li>
+                        <li><strong><span class="highlight-green">Law Abiding</span>:</strong> Abiding by all laws, rules, and regulations.</li>
+                        <li><strong><span class="highlight-blue">Accountability</span>:</strong> Accepting personal accountability for the ethical quality of decisions and omissions.</li>
+                    </ul>
+
+                    <div class="mt-8 p-4 bg-secondary-50 dark:bg-secondary-800/50 rounded-lg not-prose">
+                        <p class="text-sm text-secondary-600 dark:text-secondary-400">
+                            If you have any questions about this chapter, you can 
+                            <a href="#ask-question" class="scroll-link font-medium text-primary-600 dark:text-primary-400 hover:underline">
+                                get in touch
+                            </a>
+                            through this form.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="chapter-3-page" class="chapter-page hidden">
+        <div class="page-container max-w-4xl mx-auto">
+            <div class="flex items-center mb-6">
+                <a href="#" class="back-link flex items-center text-primary-600 dark:text-primary-400 hover:underline">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    Back to All Chapters
+                </a>
+            </div>
+            
+            <div class="page-content-box animate-fade-in">
+                <div class="mb-6 pb-6 border-b border-secondary-200 dark:border-secondary-700">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-primary-800 dark:bg-primary-900/30 dark:text-primary-400">
+                        Chapter 3
+                    </span>
+                    <h1 class="text-3xl font-bold mt-3 sm:text-4xl bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent dark:from-primary-400 dark:to-primary-300">
+                        Process of Ethical Decision Making
+                    </h1>
+                </div>
+                
+                <div class="prose prose-lg dark:prose-invert max-w-none text-secondary-700 dark:text-secondary-300 prose-h3:font-semibold prose-p:leading-relaxed prose-li:my-1 prose-a:text-primary-600 dark:prose-a:text-primary-400">
+                    
+                    <h3 class="headline-green">1. Two Families of Ethical Theories</h3>
+                    <p>The book (p. 64-65) explains the two main ways to judge an action:</p>
+                    
+                    <h4>1. <strong><span class="highlight-blue">Consequential Theories</span></strong> (e.g., Utilitarianism)</h4>
+                    <ul>
+                        <li>Judges the rightness of an act based *only* on its *<span class="highlight-green">consequences</span>* (the results).</li>
+                        <li><strong><span class="highlight-blue">Utilitarianism</span>:</strong> The most famous example. "That action is best that produces the <span class="highlight-green">greatest good for the greatest number</span>."</li>
+                        <li>It is often summarized by the saying, "<strong>the ends justify the means</strong>."</li>
+                        <li>The book distinguishes (p. 72-74):
+                            <ul>
+                                <li><strong><span class="highlight-blue">Act Consequentialism</span>:</strong> Looks at every single moral choice anew. (Impractical for real life).</li>
+                                <li><strong><span class="highlight-green">Rule Consequentialism</span>:</strong> Bases moral rules on their general consequences. (More practical, as individuals can just apply the rule).</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h4>2. <strong><span class="highlight-blue">Non-Consequential Theories</span></strong> (e.g., <strong><span class="highlight-green">Deontology</span></strong>)</h4>
+                    <ul>
+                        <li>Judges the rightness of an act based on something *other than* its consequences, such as "<span class="highlight-blue">rules</span>," "<span class="highlight-green">duties</span>," or "<span class="highlight-blue">rights</span>."</li>
+                        <li><strong><span class="highlight-green">Kant's Moral Theory</span> (p. 83):</strong> The prime example. It states that actions have moral value only if done from a sense of duty (a "<span class="highlight-blue">good will</span>"), regardless of the outcome.
+                            <ul>
+                                <li><strong>Key Principle:</strong> We must always treat people as "<span class="highlight-green">ends in themselves</span>" and never "<strong>merely as a means to an end</strong>."</li>
+                            </ul>
+                        </li>
+                        <li><strong><span class="highlight-blue">Natural Law Theory</span> (p. 84):</strong> Another example. It's based on the notion that right actions are those that accord with the moral principles embedded in nature itself.</li>
+                    </ul>
+
+                    <h3 class="headline-green">2. Problems with Pure Consequentialism</h3>
+                    <p>While "the greatest good" sounds appealing, the book (p. 78-83) highlights its significant problems:</p>
+                    <ul>
+                        <li><strong><span class="highlight-blue">Conflicts with Justice & Rights</span>:</strong> It could justify punishing an innocent person (e.g., framing them) to stop a massive riot that would kill thousands. The *consequence* is good (1 death vs. 1000s), but the *act* (injustice) is inherently wrong.</li>
+                        <li><strong><span class="highlight-green">Ignores Special Obligations</span>:</strong> The theory demands we treat everyone equally. But in reality, we have "<span class="highlight-blue">agent-relative duties</span>" (special obligations) to our family and friends that we do not have to strangers.</li>
+                        <li><strong>It is "<strong>Too Demanding</strong>":</strong> It implies that *any* act that isn't *maximizing* the most good (like spending money on a vacation instead of giving it all to charity) is morally *wrong*. This eliminates the concept of "<span class="highlight-green">supererogatory</span>" actions (actions that are good, but not strictly required).</li>
+                    </ul>
+
+                    <h3 class="headline-green">3. What is an "<span class="highlight-blue">Ethical Dilemma</span>"?</h3>
+                    <blockquote>
+                        (p. 99) An ethical dilemma is a situation in which a person has to choose between two options, both of which are morally correct but in conflict.
+                    </blockquote>
+                    <p>The book (p. 99) states there are three conditions for a situation to be a true ethical dilemma:</p>
+                    <ol>
+                        <li>The "<span class="highlight-green">agent</span>" (person) must make a decision about the best course of action.</li>
+                        <li>There must be different courses of action to choose from.</li>
+                        <li>No matter what course is taken, some ethical principle is compromised. (There is "<span class="highlight-green">no perfect solution</span>").</li>
+                    </ol>
+
+
+                    <h3 class="headline-green">4. The 9-Step Process for Ethical Decision Making</h3>
+                    <p>The book (p. 87-91) provides a practical 9-step model for resolving these dilemmas:</p>
+                    <ol>
+                        <li><strong><strong>Gather the Facts</strong>:</strong> Who, what, where, when, how, and why?</li>
+                        <li><strong><strong>Define the Ethical Issue</strong>(s):</strong> What is the core ethical conflict?</li>
+                        <li><strong><strong>Identify the Affected Parties</strong> (Stakeholders):</strong> Who are the primary and secondary stakeholders?</li>
+                        <li><strong><strong>Identify the Consequences</strong>:</strong> What are the positive and negative results for all parties? (A Consequential analysis).</li>
+                        <li><strong><strong>Identify the Relevant Principles, Rights, and Justice Issues</strong>:</strong> What duties, rights, or fairness issues are at stake? (A Non-Consequential analysis).</li>
+                        <li><strong><strong>Consider Your Character & Integrity</strong>:</strong> What would a person of integrity do? What will this action say about your character? (A Virtue Ethics analysis).</li>
+                        <li><strong><strong>Think Creatively About Potential Actions</strong>:</strong> Are you stuck between "A" and "B"? Try to brainstorm a "C" option.</li>
+                        <li><strong><strong>Check Your Gut</strong>:</strong> Listen to your intuition. It is a valuable source, especially for experienced individuals.</li>
+                        <li><strong><strong>Decide On Your Course Of Action and Prepare Responses</strong>:</strong> Make your choice and be prepared to justify it to those who may oppose it.</li>
+                    </ol>
+                    
+                    <div class="mt-8 p-4 bg-secondary-50 dark:bg-secondary-800/50 rounded-lg not-prose">
+                        <p class="text-sm text-secondary-600 dark:text-secondary-400">
+                            If you have any questions about this chapter, you can 
+                            <a href="#ask-question" class="scroll-link font-medium text-primary-600 dark:text-primary-400 hover:underline">
+                                get in touch
+                            </a>
+                            through this form.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="new-vocabs-page" class="chapter-page hidden">
+        <div class="page-container max-w-5xl mx-auto">
+            <div class="flex items-center mb-6">
+                <a href="#" class="back-link flex items-center text-primary-600 dark:text-primary-400 hover:underline">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    Back to All Chapters
+                </a>
+            </div>
+            
+            <div class="page-content-box animate-fade-in">
+                <div class="mb-6 pb-6 border-b border-secondary-200 dark:border-secondary-700">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-primary-800 dark:bg-primary-900/30 dark:text-primary-400">
+                        Vocabulary
+                    </span>
+                    <h1 class="text-3xl font-bold mt-3 sm:text-4xl bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent dark:from-primary-400 dark:to-primary-300">
+                        Key Terms & Definitions
+                    </h1>
+                </div>
+                
+                <div class="overflow-hidden border border-secondary-200 dark:border-secondary-700 rounded-lg">
+                    <div class="overflow-x-auto relative max-h-[70vh]">
+                        <table class="w-full min-w-full divide-y divide-secondary-200 dark:divide-secondary-700">
+                            <thead class="bg-secondary-50 dark:bg-secondary-800 sticky top-0 z-10">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-secondary-500 dark:text-secondary-400 uppercase tracking-wider">
+                                        Term
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-secondary-500 dark:text-secondary-400 uppercase tracking-wider">
+                                        English Definition
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-secondary-500 dark:text-secondary-400 uppercase tracking-wider">
+                                        Arabic Translation (الترجمة العربية)
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-secondary-200 dark:divide-secondary-700 bg-white dark:bg-secondary-900">
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Ethics</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">Principles or standards of human conduct that govern behavior.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">الأخلاق</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Business Ethics</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">A 'code of conduct' that businesses are expected to follow, balancing profits with stakeholder needs.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">أخلاقيات العمل</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Stakeholders</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">Individuals or groups invested in the company, including employees, customers, suppliers, and shareholders.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">أصحاب المصلحة</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Fiduciary Responsibility</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">A legal or ethical obligation to act in the best interests of another party (e.g., shareholders).</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">المسؤولية الائتمانية</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Symbiosis</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">A mutually beneficial relationship between different groups.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">التكافل / التعايش</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Normative Study</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">A study that attempts to determine what *should* be, i.e., what is right and wrong.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">دراسة معيارية</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Descriptive Study</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">A study that describes *what is* without making judgments about right or wrong.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">دراسة وصفية</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Dualism</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">A theoretical concept that views economics (profit) and morality (ethics) as two opposing poles.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">الثنائية</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Monism</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">A theoretical concept that views morality and economics as two sides of the same coin.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">الأحادية / الوحدوية</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Incentive-Compatible</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">A structure where acting in one's own self-interest also achieves the desired ethical outcome.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">متوافق مع الحوافز</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Reprisal</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">An act of retaliation or revenge.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">انتقام / عمل انتقامي</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Motivated Blindness</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">The tendency to overlook or fail to notice unethical behavior when it is not in one's interest to see it.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">العمى المُحفَّز</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Choice Architecture</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">Designing the way options are presented to people to influence their decisions towards better outcomes.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">هندسة الاختيار</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Consequentialism</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">An ethical theory that judges the rightness of an act based *only* on its consequences.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">العواقبية / النظرية العواقبية</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Utilitarianism</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">A form of consequentialism stating that the best action is the one that maximizes overall good ("greatest good for the greatest number").</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">النفعية</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Deontology</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">An ethical theory that judges the rightness of an act based on rules or duties, regardless of the consequences.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">علم الواجبات / الديونتولوجيا</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Categorical Imperative</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">(In Kant's theory) A moral law that is unconditional or absolute for all agents.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">الأمر القطعي / الحتمي</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Supererogatory</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">An action that is considered good or morally admirable but is not strictly required.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">فعل تطوعي / فوق الواجب</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Ethical Dilemma</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">A situation where a person must choose between two morally correct but conflicting options.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">المعضلة الأخلاقية</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Integrity</span></td>
+                                    <td class_name="px-6 py-4 text-sm def-gray">Demonstrating personal integrity and the courage of convictions by doing what is right even under pressure.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">النزاهة / الاستقامة</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Loyalty</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">Demonstrating fidelity and loyalty to persons and institutions; not using confidential information for personal advantage.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">الولاء</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Fairness</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">Being fair and just in all dealings; not exercising power arbitrarily or taking undue advantage of others' mistakes.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">العدالة / الإنصاف</td>
+                                </tr>
+                                <tr class="hover:bg-secondary-50 dark:hover:bg-secondary-800/50 transition-colors duration-200">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium"><span class="highlight-primary">Accountability</span></td>
+                                    <td class="px-6 py-4 text-sm def-gray">Acknowledging and accepting personal accountability for the ethical quality of decisions and omissions.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm trans-primary-dark">المساءلة</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="flex justify-center md:justify-start">
+                    <a href="#" class="text-lg font-bold text-primary-600 dark:text-primary-400 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                        Business Ethics
+                    </a>
+                </div>
+                <div class="mt-8 md:mt-0">
+                    <p class="text-center text-base text-secondary-500 dark:text-secondary-400">
+                        Made by Ahmed Hassan. © 2025 Educational Summaries Project.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Dark Mode Toggle
+            const themeToggleBtns = document.querySelectorAll('.theme-toggle');
+            const darkIcons = document.querySelectorAll('.theme-toggle-dark-icon');
+            const lightIcons = document.querySelectorAll('.theme-toggle-light-icon');
+
+            const setTheme = (isDark) => {
+                if (isDark) {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('theme', 'dark');
+                    darkIcons.forEach(icon => icon.classList.add('hidden'));
+                    lightIcons.forEach(icon => icon.classList.remove('hidden'));
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('theme', 'light');
+                    darkIcons.forEach(icon => icon.classList.remove('hidden'));
+                    lightIcons.forEach(icon => icon.classList.add('hidden'));
+                }
+            };
+
+            // Initialize theme
+            const savedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            
+            if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+                setTheme(true);
+            } else {
+                setTheme(false);
+            }
+
+            // Theme toggle event
+            themeToggleBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const isDark = document.documentElement.classList.contains('dark');
+                    setTheme(!isDark);
+                });
+            });
+
+            // Page Navigation
+            const mainContent = document.getElementById('main-content');
+            const chapterPages = document.querySelectorAll('.chapter-page');
+            const pageLinks = document.querySelectorAll('.page-link');
+            const backLinks = document.querySelectorAll('.back-link');
+            const homeLink = document.getElementById('home-link');
+
+            const showPage = (pageId) => {
+                // Hide main content and all chapter pages
+                mainContent.classList.add('hidden');
+                chapterPages.forEach(page => page.classList.add('hidden'));
+                
+                // Show the requested page
+                const targetPage = document.getElementById(pageId);
+                if (targetPage) {
+                    targetPage.classList.remove('hidden');
+                }
+                
+                // Scroll to top
+                window.scrollTo(0, 0);
+                
+                // Close mobile menu if open
+                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            };
+
+            const showMain = () => {
+                // Hide all chapter pages and show main content
+                chapterPages.forEach(page => page.classList.add('hidden'));
+                mainContent.classList.remove('hidden');
+                window.scrollTo(0, 0);
+            };
+
+            // Add event listeners to page links
+            pageLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const pageId = link.dataset.page;
+                    showPage(pageId);
+                });
+            });
+
+            // Add event listeners to back links
+            backLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    showMain();
+                });
+            });
+
+            // Add event listener to home link
+            homeLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                showMain();
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a.scroll-link').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    
+                    // If on a chapter page, go to main first
+                    if (mainContent.classList.contains('hidden')) {
+                        showMain();
+                    }
+                    
+                    // Wait for main page to be visible, then scroll
+                    setTimeout(() => {
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    }, 50);
+                    
+                    // Close mobile menu if open
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
